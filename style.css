@@ -1,0 +1,183 @@
+/* фон окна*/
+QMainWindow {
+    background: #212121;
+}
+
+/*все(?) остальное*/
+QDockWidget{
+    color: #fff;
+}
+QDockWidget::title{
+    background: #303030;
+}
+/*
+QWidget{
+    background: #262D37;
+}
+*/
+/*???*/
+QTabWidget{
+    background: ;
+}
+
+/*выбор кружошка*/
+QRadioButton{
+    background: ;
+    color: #fff;
+    font-size: 13pt;
+}
+
+/*галочка: да/нет*/
+QCheckBox{
+    background: ;
+    color: #fff;
+    font-size: 13pt;
+}
+
+/*кнопки*/
+QPushButton{
+    color: #fff;
+    background: #424242;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid #303030;
+}
+/*наведение курсора на кнопки*/
+QPushButton:hover{
+    border: 1px #fff solid;
+    /*background: #0892D0;*/
+}
+
+QPushButton#PlayButton, QPushButton#PauseButton, QPushButton#NextButton, QPushButton#BackButton, QPushButton#StopButton{
+    background: #303030;
+    border-radius: 8px;
+    padding: 2px;
+    outline: none;
+    border: 1px solid #303030;
+}
+
+/*Шрифты всех подсказок (не кнопки, не выбор) */
+QLabel{
+    /*border: 1px solid #303030;
+    border-radius: 8px;
+    padding: 2px;*/
+    color: #fff;
+    font-size: 12pt;
+}
+
+QLabel#time_slash{
+    color: #000000;
+}
+
+/*поля ввода*/
+QLineEdit{
+    background: 303030;
+    padding: 1px;
+    color: black;
+    border-style: solid;
+    border: 2px solid #212121;
+    border-radius: 8px;
+}
+
+/*лист вьюшки*/
+QListView{
+    background: #303030;
+    color: #443f3f;
+    border: 1px solid #303030;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+QLCDNumber{
+    border: 1px solid #000000
+}
+
+/*расписсание*/
+QTableWidget{
+    background: #303030;
+    color: #fff;
+    /*border: 1px solid #303030;*/
+    border-radius: 8px;
+    /*padding: 2px;*/
+    /*border-style: outset;*/
+    border: 0px;
+    padding: 5px;
+}
+QTableWidget::column{
+    background: #303030;
+    color: #fff;
+}
+
+QScrollBar{
+    background: #303030;
+}
+QScrollBar::handle{background:#424242; border:2px solid transparent; border-radius:5px; }
+QScrollBar::handle:hover{background:#303030; }
+QScrollBar::handle:pressed{background:#212121;}
+QScrollBar::sub-line{background:#303030;}
+QScrollBar::add-line{background:#303030;}
+
+/*задержка*/
+QSpinBox{
+    background: #424242;
+    color: #fff;
+}
+
+/*выпадающий список*/
+QComboBox{
+    background: #424242;
+    color: #fff;
+    border: 1px solid #303030;
+    border-radius: 8px;
+    padding: 2px;
+}
+QComboBox QAbstractItemView{
+        color: #AAA;}
+
+QHeaderView::section{
+    background:#303030;
+    padding-left:4px;
+    color: #fff; }
+
+/*ползунок*/
+QSlider{
+    background: ;
+}
+QSlider::groove:horizontal {
+    height: 10px;
+    margin: 0px;
+    border-radius: 5px;
+    background: #303030;
+}
+QSlider::handle:horizontal {
+    background: #fff;
+    border: 1px solid #E3DEE2;
+    width: 17px;
+    margin: -5px 0;
+    border-radius: 8px;
+}
+QSlider::sub-page:horizontal {
+    background: #B0AEB1;
+    border-radius: 5px;
+}
+
+QSlider::groove:vertical {
+    /*width: 5px;*/
+    border-radius: 10px;
+    background: #B0AEB1;
+    border-width: 1px;
+}
+QSlider::handle:vertical {
+    background: #fff;
+    border: 1px solid #303030;
+    height: 20px;
+    /*margin: 5px 0;*/
+    border-width: 1px;
+    border-radius: 10px;
+}
+QSlider::sub-page:vertical {
+    background: #303030;
+    border-radius: 10px;
+}
